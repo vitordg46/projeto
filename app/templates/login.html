@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sua Mascara - Login</title>
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+<style>
+
+body  {
+  background-image: url("static/images/plano-de-fundo-sua-máscara 2.png");
+}
+
+.login {
+  font-family: Amarillo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 100px;
+}
+
+.form {
+	width: 400px;
+	display: inline-block;
+}
+
+</style>
+</head>
+<body>
+      
+ <div align= "center", id="login", style="text-align:center">
+                
+	<div class='logo'>
+	<img src="{{ url_for('static', filename='images/logo.png') }}">
+	</div>
+
+	<div class='login'>
+		<p>LOGIN</p>	
+	</div>	
+	
+	<form action="" method="POST">
+    
+          {{ form.csrf_token }}
+
+          <div class="form">
+            <label>EMAIL</label><br>
+            {{ form.email(class="form-control") }}
+          </div><br><br>
+
+          <div class="form">
+            <label>SENHA</label><br>
+            {{ form.password(class="form-control") }}
+          </div><br><br><br>
+
+		  <button type="submit" class="btn btn-light">ENTRAR</button><br><br><br>
+          
+    </form>
+
+  <p class="botao">  
+		<a href="cadastro" style='text-decoration: none; color: #000000;'><i> Ainda não tem um cadastro? <br>
+      <u>CLIQUE AQUI</u> para fazer o seu! </a> 

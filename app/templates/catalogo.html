@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sua Mascara - Catalogo</title>
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+<style>
+
+body {
+  background-image: url("static/images/plano-de-fundo-sua-máscara 2.png");
+}
+
+.catalogo {
+  font-family: Amarillo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 100px;
+}
+
+.form {
+	width: 400px;
+	display: inline-block;
+}
+
+.botao {
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.centro {
+	text-align: center;
+}
+
+.card{
+
+  margin: 10px; /* Added */
+  float: left; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+
+</style>
+</head>
+<body>
+
+<div align= "center", id="catalogo", style="text-align:center">
+                
+<div class='logo'>
+	<img src="{{ url_for('static', filename='images/logo.png') }}">
+</div>
+
+	<div class='catalogo'>
+		<p>PERSONALIZE SUA MÁSCARA</p>	
+	</div>
+
+<div class='texto'>
+		<p>Escolha um tecido:</p>	
+	</div>	
+<select class="form">
+  <option>...</option>
+  <option>Algodão</option>
+  <option>Poliéster</option>
+</select><br><br>
+
+<div class='texto'>
+		<p>Escolha uma cor:</p>	
+	</div>	
+<select class="form">
+  <option>...</option>
+  <option>Amarelo</option>
+  <option>Branco</option>
+  <option>Preto</option>
+  <option>Rosa</option>
+  <option>Verde escuro</option>
+  <option>Vinho</option>
+</select><br><br>
+
+<div class='texto'>
+		<p>Estampas:</p>	
+	</div>	
+<select class="form">   
+  <option>...</option>
+  <option>Donuts</option>
+  <option>Fight like a girl</option>
+  <option>Galaxy</option>
+  <option>Géometricas</option>
+  <option>HP - Leviosa</option>
+  <option>HP - Pombo de ouro</option>
+  <option>Mulher maravilha</option>
+  <option>Saturno</option>
+  <option>Vingadores</option>
+</select><br>
+
+	<p class="botao">  
+		<a href="https://chat.whatsapp.com/IwWxiQGimmwDUoRjF8S6NM" style='text-decoration: none; color: #000000;'
+    > Para realizar o seu pedido conforme as opções dadas acima, <u>clique aqui<u></a> 
+
+
+</select>
+</body>
+</html>
